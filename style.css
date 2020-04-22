@@ -1,0 +1,12 @@
+#canvas {
+width: 1200px;
+height: 1300px;
+border: 3px solid rgb(48, 35, 35);
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+}
+#but {
+  margin-top: 30px;
+}
