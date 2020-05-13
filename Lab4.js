@@ -324,7 +324,9 @@ const dfsFull = [starty];
 
 const dfs = (vertics, current, prev = 1) => {
   const cons = vertics[current].simple.concat(vertics[current].double);
-  cons.sort();
+  const compare = (a, b) => ((vertics[a].num < vertics[b].num) ? -1 : 1);
+  cons.sort(compare);
+  console.log(cons);
   cons.forEach(val => {
     if (!dfsArray.includes(val)) {
       dfsArray.push(val);
